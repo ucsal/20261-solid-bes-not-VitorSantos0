@@ -153,8 +153,10 @@ public class App implements ParticipanteService, ProvaService, ExecucaoService {
 			System.out.println("\nQuestão #" + q.getId());
 			System.out.println(q.getEnunciado());
 
-			System.out.println("Posição inicial:");
-			imprimirTabuleiroFen(q.getFenInicial());
+			if(q.getProvaId() == 2) { // chess seed
+				System.out.println("Posição inicial:");
+				imprimirTabuleiroFen(q.getFenInicial());
+			}
 
 			for (var alt : q.getAlternativas()) {
 			    System.out.println(alt);

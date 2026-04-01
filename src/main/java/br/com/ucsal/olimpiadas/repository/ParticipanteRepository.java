@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ParticipanteRepository implements Repository<Participante> {
-
     private long proximoParticipanteId = 1;
     private List<Participante> participantes = new ArrayList<>();
 
